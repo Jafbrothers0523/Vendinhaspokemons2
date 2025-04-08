@@ -72,7 +72,6 @@
             color: #ff5733;
         }
 
-        
         .price-section {
             display: flex;
             justify-content: center;
@@ -100,6 +99,21 @@
             color: #ff5733;
         }
 
+        .buy-button {
+            background-color: lightgreen;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .buy-button:hover {
+            background-color: #8fbc8f;
+        }
+
         @media (max-width: 768px) {
             .card {
                 flex-direction: column;
@@ -115,56 +129,65 @@
                 margin-left: 0;
             }
         }
+
+        .anchor-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .anchor-links a {
+            color: #ffffff;
+            font-size: 1.5em;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .anchor-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
     </style>
 </head>
 <body>
 
     <h1>Venda de Cartas Pokémon</h1>
-        <h3>Minha Coleção:</h3>
+    <div class="anchor-links">
+        <a href="#cartas-shiny">Cartas Shiny</a>
+        <a href="#cartas-aleatorias">Cartas Aleatórias</a>
+    </div>
+
+    <h3>Minha Coleção:</h3>
 
     <div class="container">
-        
+
         <div class="card">
-            <img src="https://repositorio.sbrauble.com/arquivos/in/pokemon_bkp/cd/149/4749_20.jpg" alt="Lua Estrondo EX">
+            <img src="https://repositorio.sbrauble.com/arquivos/in/pokemon_bkp/cd/149/4749_20.jpg" alt="Reshiram e Charizard-GX">
             <div class="card-content">
                 <h2>Reshiram e Charizard-GX</h2>
                 <p class="price">R$ 74,99</p>
                 <p>Reshiram e Charizard se juntam em uma carta como ALIADOS</p>
                 <h6>1 Un.</h6>
-            </div>
-        </div>
-
-       <div class="card">
-            <img src="https://repositorio.sbrauble.com/arquivos/in/pokemon_bkp/cd/134/4728_33.jpg" alt="Lua Estrondo EX">
-            <div class="card-content">
-                <h2>Pikachu e Zekrom-GX</h2>
-                <p class="price">R$ 99,70</p>
-                <p>Pikachu e Zekrom (Pokemon lendario) se juntam como ALIADOS</p>
-                <h6>1 Un.</h6>
-            </div>
-        </div>
-
-        
-<div class="card">
-            <img src="https://repositorio.sbrauble.com/arquivos/in/pokemon_bkp/cd/342/6656093b8061d-hl8mu-a8iqm-96aef7592372ff612f85a2591541f820.jpg" alt="Lua Estrondo EX">
-            <div class="card-content">
-                <h2>Fidough Shiny</h2>
-                <p class="price">R$ 5,00</p>
-                <p>Pokemon shiny que só aparecem entre 4000 Pokemons da mesma especie </p>
-                <h6>1 Un.</h6>
+                <button class="buy-button" onclick="window.location.href='#footer'">Quero Comprar</button>
             </div>
         </div>
 
         <div class="card">
-            <img src="https://repositorio.sbrauble.com/arquivos/in/pokemon_bkp/cd/505/65b2d6a5a4588-5c0s7-gnlhw-fbe35c1a97a95bb5a09599d32d08a022.jpg" alt="Lua Estrondo EX">
+            <img src="https://repositorio.sbrauble.com/arquivos/in/pokemon_bkp/cd/134/4728_33.jpg" alt="Pikachu e Zekrom-GX">
             <div class="card-content">
-                <h2>Abra Shiny</h2>
-                <p class="price">R$ 29,70</p>
-                <p>Pokemon shiny que só aparecem entre 4000 Pokemons da mesma especie </p>
+                <h2>Pikachu e Zekrom-GX</h2>
+                <p class="price">R$ 99,70</p>
+                <p>Pikachu e Zekrom (Pokemon lendário) se juntam como ALIADOS</p>
                 <h6>1 Un.</h6>
+                <button class="buy-button" onclick="window.location.href='#footer'">Quero Comprar</button>
             </div>
         </div>
-        
+
         <div class="card">
             <img src="https://m.media-amazon.com/images/I/51OCYYPc5KL._AC_UF894,1000_QL80_.jpg" alt="Latios Full Art">
             <div class="card-content">
@@ -172,10 +195,10 @@
                 <p class="price">R$ 139,99</p>
                 <p>Latios Full Art é uma carta incrivelmente detalhada, com um design impressionante. Muito procurada por colecionadores pela sua beleza e raridade.</p>
                 <h6>1 Un.</h6>
+                <button class="buy-button" onclick="window.location.href='#footer'">Quero Comprar</button>
             </div>
         </div>
 
-         
         <div class="card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrpMv7hS8oZQ8O9aM10QYtK9EjEi01NZrlBg&s" alt="Mélia Treinadora">
             <div class="card-content">
@@ -183,10 +206,10 @@
                 <p class="price">R$ 44,70</p>
                 <p>Mélia é uma treinadora famosa do universo Pokémon. Sua carta é altamente valorizada por fãs da série e colecionadores de cartas de treinador.</p>
                 <h6>1 Un.</h6>
+                <button class="buy-button" onclick="window.location.href='#footer'">Quero Comprar</button>
             </div>
         </div>
 
-        
         <div class="card">
             <img src="https://m.media-amazon.com/images/I/61JZYx86ggL.jpg" alt="Ampharos EX">
             <div class="card-content">
@@ -194,10 +217,10 @@
                 <p class="price">R$ 24,99</p>
                 <p>Ampharos EX é uma carta poderosa que pode vir a ser decisiva em batalhas. A carta EX é muito cobiçada por colecionadores por sua raridade e habilidades.</p>
                 <h6>1 Un.</h6>
+                <button class="buy-button" onclick="window.location.href='#footer'">Quero Comprar</button>
             </div>
         </div>
 
-        
         <div class="card">
             <img src="https://img.mypcards.com/img/2/2181/pokemon_ssp_193_191/pokemon_ssp_193_191_pt.jpg" alt="Vivillon Full Art">
             <div class="card-content">
@@ -205,6 +228,7 @@
                 <p class="price">R$ 19,70</p>
                 <p>Vivillon Full Art é uma carta cheia de detalhes, com um design deslumbrante, muito cobiçada tanto por colecionadores quanto por jogadores.</p>
                 <h6>1 Un.</h6>
+                <button class="buy-button" onclick="window.location.href='#footer'">Quero Comprar</button>
             </div>
         </div>
 
@@ -213,8 +237,9 @@
             <div class="card-content">
                 <h2>Palafin EX</h2>
                 <p class="price">R$ 14,70</p>
-                <p>Um Super héroi maritimo que salva a todos em perigo.</p>
+                <p>Um Super herói marítimo que salva a todos em perigo.</p>
                 <h6>1 Un.</h6>
+                <button class="buy-button" onclick="window.location.href='#footer'">Quero Comprar</button>
             </div>
         </div>
 
@@ -225,77 +250,73 @@
                 <p class="price">R$ 14,90</p>
                 <p>Quando atacado, este Pokémon retaliará projetando espinhos grossos para fora do corpo. É um movimento arriscado que coloca tudo em jogo.</p>
                 <h6>1 Un.</h6>
+                <button class="buy-button" onclick="window.location.href='#footer'">Quero Comprar</button>
             </div>
         </div>
 
         <div class="card">
-            <img src="https://repositorio.sbrauble.com/arquivos/in/pokemon_bkp/cd/104/4425.107.jpg" alt="Dachsbun EX">
+            <img src="https://repositorio.sbrauble.com/arquivos/in/pokemon_bkp/cd/104/4425.107.jpg" alt="Exeggutor de Alola-GX">
             <div class="card-content">
                 <h2>Exeggutor de Alola-GX</h2>
                 <p class="price">R$ 34,90</p>
-                <p>Com sua versão de alola podendo crescer mais que 10 mtros</p>
+                <p>Com sua versão de alola podendo crescer mais que a versão normal. Fique com o Exeggutor da região tropical da Alola.</p>
                 <h6>1 Un.</h6>
+                <button class="buy-button" onclick="window.location.href='#footer'">Quero Comprar</button>
             </div>
         </div>
-
-
-        <div class="card">
-            <img src="https://m.media-amazon.com/images/I/618Lig3bsML.jpg " alt="Dachsbun EX">
-            <div class="card-content">
-                <h2>Cartas Super Raras</h2>
-                <p class="price">R$ 5,00</p>
-                <p>Cartas de pokemon sortidas aleatoriamente .</p>
-                <h6>8 Uns.</h6>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://m.media-amazon.com/images/I/618Lig3bsML.jpg " alt="Dachsbun EX">
-            <div class="card-content">
-                <h2>Cartas Raras</h2>
-                <p class="price">R$ 1,00</p>
-                <p>Cartas de pokemon sortidas aleatoriamente .</p>
-                <h6>16 Uns.</h6>
-            </div>
-        </div>
-            <div class="card">
-                <img src="https://a-static.mlcdn.com.br/800x560/cartas-pokemon-lote-de-100-cards-brilhante-garantida-produto-original-copag/universalcardshop/pkl1003b/fbcd05a286fdb4da6f21b610919381dd.jpeg" alt="Dachsbun EX">
-                <div class="card-content">
-                    <h2>Cartas incomuns</h2>
-                    <p class="price">R$ 0,50</p>
-                    <p>Cartas de pokemon sortidas aleatoriamente .</p>
-                    <h6>18 Uns.</h6>
-                </div>
-            </div>
-       
-            <div class="card">
-                <img src="https://a-static.mlcdn.com.br/800x560/cartas-pokemon-lote-de-100-cards-brilhante-garantida-produto-original-copag/universalcardshop/pkl1003b/fbcd05a286fdb4da6f21b610919381dd.jpeg " alt="Dachsbun EX">
-                <div class="card-content">
-                    <h2>Cartas Comuns</h2>
-                    <p class="price">R$ 0,25</p>
-                    <p>Cartas de pokemon sortidas aleatoriamente .</p>
-                    <h6>24 Uns.</h6>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_797152-MLB74508038638_022024-O.webp" alt="Dachsbun EX">
-                <div class="card-content">
-                    <h2>Energias</h2>
-                    <p class="price">R$ 0,10</p>
-                    <p>Energias caso precisa para uma batalha Pokémon.</p>
-                    <h6> 45 Uns.</h6>
-                </div>
-            </div>
 
     </div>
 
+    <h1 id="cartas-shiny">Cartinhas Shiny:</h1>
 
-    <footer class="footer">
-        <div class="container">
-          <p> Alguma duvida? ligue para esse número ou fale comigo pelo Whatssap.</p>
-          <p> +55 (48) 98414-5646</p>
+    <div class="container">
+       
+        <div class="card">
+            <img src="https://repositorio.sbrauble.com/arquivos/in/pokemon_bkp/cd/342/6656093b8061d-hl8mu-a8iqm-96aef7592372ff612f85a2591541f820.jpg" alt="Fidough Shiny">
+            <div class="card-content">
+                <h2>Fidough Shiny</h2>
+                <p class="price">R$ 5,00</p>
+                <p>Pokemon shiny que só aparecem entre 4000 Pokemons da mesma espécie</p>
+                <h6>1 Un.</h6>
+                <button class="buy-button" onclick="window.location.href='#footer'">Quero Comprar</button>
+            </div>
         </div>
-      </footer>
+
+        <div class="card">
+            <img src="https://repositorio.sbrauble.com/arquivos/in/pokemon_bkp/cd/505/65b2d6a5a4588-5c0s7-gnlhw-fbe35c1a97a95bb5a09599d32d08a022.jpg" alt="Lua Estrondo EX">
+            <div class="card-content">
+                <h2>Abra Shiny</h2>
+                <p class="price">R$ 29,70</p>
+                <p>Pokemon shiny que só aparecem entre 4000 Pokemons da mesma especie </p>
+                <h6>1 Un.</h6>
+                <button class="buy-button" onclick="window.location.href='#footer'">Quero Comprar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 id="cartas-aleatorias">Cartinhas Aleatórias:</h1>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/618Lig3bsML.jpg " alt="Cartas Super Raras">
+            <div class="card-content">
+                <h2>Cartas Super Raras, Raras, Incomuns, Comuns</h2>
+                <p class="price">R$ 5,00 / 1,00 / 0,50/ 0,25</p>
+                <p>Cartas de Pokémon sortidas aleatoriamente.</p>
+                <h6>8 Uns.</h6>
+                <button class="buy-button" onclick="window.location.href='#footer'">Quero Comprar</button>
+            </div>
+        </div>
+
+
+        <footer  id ="footer" class="footer">
+            <div class="container">
+               
+              <p> Alguma duvida? ligue para esse número ou fale comigo pelo Whatssap.</p>
+              <p> +55 (48) 98414-5646</p>
+            </div>
+          </footer>
+
 </body>
 </html>
